@@ -1,9 +1,9 @@
 function toggleMenu() {
     var sidebar = document.getElementById("sidebar");
-    if (sidebar.style.left === "-250px") {
-        sidebar.style.left = "0";
-    } else {
+    if (sidebar.style.left === "0px") {
         sidebar.style.left = "-250px";
+    } else {
+        sidebar.style.left = "0";
     }
 }
 
@@ -12,8 +12,6 @@ window.onload = function() {
 };
 
 function loadArticles() {
-    // Предполагается, что telegraphs.txt имеет формат:
-    // Заголовок|Ссылка
     fetch('telegraphs.txt')
         .then(response => response.text())
         .then(data => {
