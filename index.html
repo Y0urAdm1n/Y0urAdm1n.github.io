@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your BlackHat Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="menu-button" onclick="toggleMenu()">☰ Menu</div>
+        <nav id="sidebar">
+            <ul>
+                <li><a href="index.html">Главная страница</a></li>
+                <li><a href="projects.html">Проекты</a></li>
+                <li><a href="doxbin.html">Бедолаги</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome">
+            <h1>Добро пожаловать на мой сайт</h1>
+            <p>Тут будет твой текст, который ты можешь заполнить сам.</p>
+        </section>
+
+        <section id="articles">
+            <h2>Мои статьи на Telegra.ph</h2>
+            <div id="articles-container">
+                <!-- Статьи будут динамически загружаться сюда -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Контакты</h2>
+            <p>Связаться со мной можно через Telegram: <a href="https://t.me/zapolni">t.me/zapolni</a></p>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
